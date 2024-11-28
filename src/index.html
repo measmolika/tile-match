@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      margin: 20px 0;
+    }
+
+    #game-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    .tile {
+      width: 100px;
+      height: 100px;
+      background: #ddd;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .tile.red {
+      background: red;
+    }
+
+    .tile.hidden {
+      background: #ddd;
+    }
+
+    #score {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tile Match</h1>
+  <div id="game-container"></div>
+  <div id="score">Score: 0</div>
+  <script src="renderer.js"></script>
+</body>
+</html>
