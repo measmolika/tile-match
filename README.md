@@ -1,5 +1,9 @@
 ### Tile Match Demo 
 Start the app using
-```npm start```
+```
+npm start
+```
 Create a distributable using
-```npm run make```
+```
+npm run make
+```
